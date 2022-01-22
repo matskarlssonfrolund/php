@@ -1,0 +1,32 @@
+
+
+.textbox{
+    border-radius: 5px;
+    border-color: black;
+    border-width: thin;
+    background-color: aliceblue;
+    width: 250px;
+}
+h1{
+    color: black;
+}
+.error{
+    color: tomato;
+}
+.success{
+    color: #00CC00;
+}
+table{
+    width: 800px;
+    border: gray;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 3px;
+
+}
+td, tr, th{
+    width: 33%;
+    border: gray;
+    border-style: solid;
+    border-width: 1px;
+}
