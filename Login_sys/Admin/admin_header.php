@@ -41,6 +41,10 @@ session_start();
                     <a class="nav-link" href="admin_upload.php">Ladda upp filer</a>
                 </li>
                 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.admin.photo.php">Admin photo</a>
+                </li>
+                
                 
                 <li class="nav-item">
                     <a class="nav-link" href="../includes/logout.inc.php">Logga ut</a>
