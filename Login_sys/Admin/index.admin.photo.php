@@ -26,16 +26,18 @@ require "admin_header.php";
                         }else{
                             echo "<img src='uploads/user.png>";
                         }
-
+                        echo $row['username'];
                     echo "</div>";
 
                 }
-
-
             }
-        }else{
-        echo "Det är tomt på användare i databasen";
-    }
+        }
+                else
+                {
+                    echo "Inga användare i databasen ännu...";
+                }
+
+
 
     if (isset($_SESSION['adminUid'])) {
         if ($_SESSION['adminUid'] == 'Ja') {
@@ -46,18 +48,19 @@ require "admin_header.php";
                     <button type='submit' name='submit' class='btn btn-warning btn-sm'>Ladda Upp</button>
                     </form>";
     } else {
-        echo "Du är inte inloggad...";
+        echo "<h3>Du är inte inloggad...</h3><br>";
+        echo "<form action='admin_login2.php' method='post'>
+            <input class='textbox2' type='text' name='firstName' placeholder='First name'><br>
+            <input class='textbox2' type='text' name='lastName' placeholder='Last name'><br>
+            <input class='textbox2' type='text' name='uidUsers' placeholder='User name'><br>
+            <input class='textbox2' type='password' name='pwdUsers' placeholder='Password'><br>
+            <button class='btn btn-sm btn-warning' type='submit' name='submitSignup'>Signup</button>
+            
+        </form>";
     }
 
     ?>
-
-<p>Ladda upp filer.</p>
-    <form action="admin_upload_files.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <button type="submit" name="submit" class="btn btn-warning btn-sm">Ladda upp</button>
-    </form>
 <br><br>
-
 <p>Logga in som användare.</p>
     <form action="admin_login2.php" method="post">
         <button class="btn btn-warning btn-sm" type="submit" name="submitLogin">Logga In</button>
