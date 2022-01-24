@@ -30,3 +30,11 @@ td, tr, th{
     border-style: solid;
     border-width: 1px;
 }
+.textbox2{
+    border-radius: 3px;
+    border-color: black;
+    border-width: thin;
+    background-color: aliceblue;
+    width: 200px;
+    margin: 5px;
+}
