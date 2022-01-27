@@ -22,9 +22,9 @@ require "admin_header.php";
 
                         if ($rowImg['status'] == 0 )
                         {
-                            echo "<img src='uploads/user".$id.".png'>";
+                            echo "<img src='uploads/user".$id.".jpg'>";
                         }else{
-                            echo "<img src='uploads/user.png>";
+                            echo "<img src='uploads/user.jpg>";
                         }
                         echo $row['username'];
                     echo "</div>";
@@ -49,7 +49,7 @@ require "admin_header.php";
                     </form>";
     } else {
         echo "<h3>Du är inte inloggad...</h3><br>";
-        echo "<form action='admin_login2.php' method='post'>
+        echo "<form action='index.admin.photo.php' method='post'>
             <input class='textbox2' type='text' name='firstName' placeholder='First name'><br>
             <input class='textbox2' type='text' name='lastName' placeholder='Last name'><br>
             <input class='textbox2' type='text' name='uidUsers' placeholder='User name'><br>
@@ -60,7 +60,7 @@ require "admin_header.php";
     }
 
     ?>
-<br><br>
+<!--br><br>
 <p>Logga in som användare.</p>
     <form action="admin_login2.php" method="post">
         <button class="btn btn-warning btn-sm" type="submit" name="submitLogin">Logga In</button>
@@ -69,7 +69,7 @@ require "admin_header.php";
     <p>Logga ut som användare.</p>
     <form action="admin_logout2.php" method="post">
         <button class="btn btn-warning btn-sm" type="submit" name="submitLogout">Logga Ut</button>
-    </form>
+    </form-->
 
 
 

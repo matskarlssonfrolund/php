@@ -2,7 +2,6 @@
 require "admin_header.php";
 include_once 'dbh2.inc.php';
 
-
 ?>
 
 <main>

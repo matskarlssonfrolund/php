@@ -42,7 +42,7 @@ session_start();
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.admin.photo.php">Admin photo</a>
+                    <a class="nav-link" href="index.admin.photo.php">Lägg till profilbild</a>
                 </li>
                 
                 

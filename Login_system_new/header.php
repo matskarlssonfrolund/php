@@ -17,6 +17,7 @@
       <link rel="stylesheet" href="css/style1.css">
   </head>
   <body>
+  <div class="container>">
 
     <!--A quick navigation-->
     <nav>
@@ -24,16 +25,18 @@
         <a href="index.php"><img src="img/logo-white.png" alt="Blogs logo"></a>
         <ul>
           <li><a href="index.php">Start</a></li>
-          <li><a href="discover.php">Om företaget</a></li>
-          <li><a href="blog.php">Blog</a></li>
-          <?php
+          <li><a href="discover.php">TE19</a></li>
+          <li><a href="blog.php">TE20</a></li>
+            <li><a href="blog.php">TE21</a></li>
+
+            <?php
             if (isset($_SESSION["useruid"])) {
-              echo "<li><a href='profile.php'>Medlemssida</a></li>";
+              echo "<li><a href='te21.php'>TE21</a></li>";
               echo "<li><a href='logout.php'>Logout</a></li>";
             }
             else {
-              echo "<li><a href='signup.php'>Sign up</a></li>";
-              echo "<li><a href='login.php'>Log in</a></li>";
+              echo "<li><a href='signup.php'>Sök</a></li>";
+              echo "<li><a href='login.php'>Inlogg</a></li>";
             }
           ?>
         </ul>
